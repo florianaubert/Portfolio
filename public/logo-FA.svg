@@ -1,0 +1,14 @@
+<!-- public/logo-FA.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Logo FA">
+    <title>FA — Florian Aubert</title>
+    <rect width="100%" height="100%" fill="transparent"/>
+    <!-- Background optional square (comment out if you don't want a container) -->
+    <!--<rect x="8" y="8" width="184" height="184" rx="18" fill="none" stroke="#262626" stroke-width="0"/>-->
+    <!-- Main letters: use a simple geometric sans font look -->
+    <g fill="#FF7A1A" transform="translate(18,18)">
+        <!-- F -->
+        <path d="M6 6 H54 V16 H24 V34 H52 V44 H24 V64 H6 Z" />
+        <!-- A -->
+        <path d="M96 64 L120 6 L144 64 L130 64 L124 46 H92 L86 64 Z M108 28 L116 48 H100 Z" />
+    </g>
+</svg>

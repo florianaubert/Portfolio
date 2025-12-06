@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 80 80"
+     role="img"
+     aria-label="Logo FA">
+    <g fill="#FF7A1A">
+        <!-- F légèrement réduit et remonté -->
+        <path d="M0 4 H36 V12 H14 V24 H34 V32 H14 V56 H0 Z" />
+        <!-- A recentré -->
+        <path d="M44 56 L60 4 L76 56 L66 56 L62 40 H42 L38 56 Z
+             M50 24 L56 40 H46 Z" />
+    </g>
+</svg>

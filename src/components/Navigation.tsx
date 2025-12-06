@@ -56,12 +56,12 @@ const Navigation = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="www.linkedin.com/in/florian-aubert-7771b6347" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
             <Button variant="hero" size="sm" asChild>
-              <a href="/cv.pdf" download>
+              <a href="/CV-Aubert-Florian.pdf" download>
                 <FileDown className="h-4 w-4" />
                 CV
               </a>
@@ -106,7 +106,7 @@ const Navigation = () => {
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a href="www.linkedin.com/in/florian-aubert-7771b6347" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>

@@ -8,26 +8,56 @@ import { projects } from "@/data/projects";
 
 const timeline = [
   {
-    year: "2023 - Présent",
+    year: "2024 - Présent",
     title: "BUT Informatique",
-    location: "IUT de [Ville]",
-    description: "Formation en développement, bases de données, réseaux et gestion de projet."
+    location: "IUT de Montpellier",
+    description: "Parcours RACDV : réalisation d'applications : conception, développement et validation"
   },
   {
-    year: "2023",
+    year: "2024",
     title: "Baccalauréat",
-    location: "Lycée [Nom]",
-    description: "Spécialités Mathématiques et NSI. Mention [X]."
+    location: "Lycée Jean Jaurès",
+    description: "Spécialités Mathématiques et NSI. Mention Bien."
   }
 ];
 
 const interests = [
-  { icon: "💻", label: "Développement Web" },
-  { icon: "🎮", label: "Jeux Vidéo" },
-  { icon: "🎵", label: "Musique" },
-  { icon: "📚", label: "Tech & Innovation" },
-  { icon: "🏃", label: "Sport" },
-  { icon: "🌍", label: "Voyages" }
+    { icon: "🚴", label: "Cyclisme" },
+    { icon: "⚽", label: "Football" },
+    { icon: "🌍️", label: "Géographie" },
+    { icon: "🎮", label: "Jeux de gestion & simulation" },
+    { icon: "🥾", label: "Randonnées" }
+];
+
+const categories = [
+    {
+        title: "Langages & Frameworks",
+        skills: [
+            "Java",
+            "Python",
+            "PHP (MVC, backend)",
+            "JavaScript",
+            "HTML / CSS",
+            "SQL (Oracle, modèle EA)"
+        ]
+    },
+    {
+        title: "Outils & Environnements",
+        skills: [
+            "Git",
+            "Linux",
+            "Notion",
+            "Excel / Google Sheets"
+        ]
+    },
+    {
+        title: "Développement & Méthodologie",
+        skills: [
+            "Architecture MVC",
+            "Conception orientée objet",
+            "Méthodes Agiles (Scrum)"
+        ]
+    }
 ];
 
 const futureProjects = [
@@ -46,7 +76,7 @@ const futureProjects = [
 ];
 
 const Index = () => {
-  return (
+    return (
     <Layout>
       {/* Hero Section */}
       <section className="min-h-[calc(100vh-4rem)] flex items-center relative overflow-hidden">
@@ -67,7 +97,7 @@ const Index = () => {
 
             {/* Name */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold animate-slide-up" style={{ animationDelay: "100ms" }}>
-              <span className="text-foreground">Prénom Nom</span>
+              <span className="text-foreground">Florian Aubert</span>
               <br />
               <span className="text-muted-foreground">Étudiant en BUT Informatique</span>
             </h1>
@@ -131,41 +161,55 @@ const Index = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Profile Image Placeholder */}
-            <div className="order-2 lg:order-1 animate-slide-up">
-              <div className="aspect-square max-w-md mx-auto glass rounded-2xl overflow-hidden relative group">
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <span className="font-mono text-6xl text-primary/40">&lt;/&gt;</span>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <p className="font-mono text-sm text-primary mb-1">Prénom Nom</p>
-                  <p className="text-muted-foreground text-sm">BUT Informatique - 2ème année</p>
-                </div>
+              <div className="order-2 lg:order-1 animate-slide-up">
+              <div className="aspect-square max-w-md mx-auto bg-card/60 rounded-2xl overflow-hidden relative group border border-transparent hover:border-card/70 transition-all">
+          {/* Image zone */}
+              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-transparent to-transparent p-6">
+                  {/* Use the SVG in /public */}
+                  <img
+                      src="/logo-FA.svg"
+                      alt="Logo FA — Florian Aubert"
+                      className="w-3/4 h-3/4 object-contain"
+                      aria-hidden={false}
+                  />
               </div>
-            </div>
+
+              {/* Soft overlay to keep text on top */}
+              <div className="absolute inset-0 pointer-events-none" />
+
+              {/* Footer text */}
+              <div className="absolute bottom-6 left-6 right-6">
+                  <p className="font-mono text-sm text-primary mb-1">Florian Aubert</p>
+                  <p className="text-muted-foreground text-sm">BUT Informatique - 2ème année</p>
+              </div>
+          </div>
+        </div>
 
             {/* Bio */}
             <div className="order-1 lg:order-2 space-y-6 animate-slide-up" style={{ animationDelay: "100ms" }}>
               <SectionTitle title="À propos de moi" align="left" className="mb-6" />
               
               <p className="text-muted-foreground leading-relaxed">
-                Étudiant passionné en deuxième année de BUT Informatique, je m'intéresse 
-                particulièrement au développement web et aux technologies modernes. 
-                Mon parcours m'a permis de développer des compétences aussi bien en 
-                front-end qu'en back-end.
+                  Je m’appelle Florian Aubert et je suis actuellement étudiant en BUT Informatique à l’IUT de Montpellier.
+                  Je m’intéresse à l’informatique depuis que je suis tout petit. Mon père travaillant déjà dans ce domaine,
+                  j’ai rapidement eu envie de comprendre comment fonctionnaient les ordinateurs et les programmes.
+                  Un stage d’observation m’a d’ailleurs conforté dans l’idée de suivre cette voie.
+                  Les cours de NSI au lycée, ainsi que mon attrait pour la logique et l’algorithmique, ont renforcé mon envie d’approfondir mes connaissances.
+                  J’ai ensuite intégré le BUT Informatique de Montpellier pour développer mes compétences techniques
+                  à travers de nombreux projets réalisés au cours de ma formation.
               </p>
               
               <p className="text-muted-foreground leading-relaxed">
-                Curieux et autodidacte, j'aime apprendre de nouvelles technologies et 
-                les mettre en pratique à travers des projets personnels et académiques. 
-                Je suis convaincu que l'informatique est un domaine en constante évolution 
-                qui offre d'infinies possibilités de création et d'innovation.
+                  Après mon BUT Informatique, je souhaite m’orienter vers un parcours mêlant développement logiciel et bases de données.
+                  J’apprécie autant la conception et l’implémentation d’applications que la structuration, l’optimisation et la gestion des données qui les alimentent.
+                  Je prévois de poursuivre mes études, afin de renforcer mes compétences en développement, modélisation, SQL,
+                  optimisation des bases et architecture logicielle, avec l’objectif d’évoluer vers un poste technique polyvalent dans ces domaines.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin className="h-4 w-4 text-primary" />
-                  <span className="text-sm">[Ville], France</span>
+                  <span className="text-sm">Montpellier, France</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <GraduationCap className="h-4 w-4 text-primary" />
@@ -185,7 +229,7 @@ const Index = () => {
             subtitle="Ce qui me passionne au quotidien"
           />
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
             {interests.map((interest, index) => (
               <div 
                 key={interest.label}
@@ -269,29 +313,42 @@ const Index = () => {
       </section>
 
       {/* Skills Preview */}
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <SectionTitle 
-            title="Compétences"
-            subtitle="Technologies et outils que j'utilise au quotidien"
-          />
+        <section className="py-24">
+            <div className="container mx-auto px-6">
+                <SectionTitle
+                    title="Compétences"
+                    subtitle="Technologies & savoir-faire que j'utilise au quotidien"
+                />
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {[
-              "HTML/CSS", "JavaScript", "TypeScript", "React",
-              "PHP", "MySQL", "Git", "Linux"
-            ].map((skill, index) => (
-              <div 
-                key={skill}
-                className="glass p-4 text-center rounded-lg hover:border-primary/50 transition-all duration-300 animate-slide-up"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                <span className="font-mono text-sm text-foreground">{skill}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
+                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10">
+                    {categories.map((cat, i) => (
+                        <div
+                            key={cat.title}
+                            className="glass p-6 rounded-2xl animate-slide-up"
+                            style={{ animationDelay: `${i * 100}ms` }}
+                        >
+                            <h3 className="text-lg font-semibold mb-4 text-primary/90">
+                                {cat.title}
+                            </h3>
+
+
+                            <div className="space-y-2">
+                                {cat.skills.map((skill, index) => (
+                                    <div
+                                        key={skill}
+                                        className="bg-background/40 border border-border/40 rounded-lg p-3 text-sm font-mono hover:border-primary/50 transition-all duration-300"
+                                        style={{ animationDelay: `${(i * 6 + index) * 40}ms` }}
+                                    >
+                                        {skill}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
 
       {/* Future Projects */}
       <section className="py-24 bg-card/30">
@@ -332,12 +389,12 @@ const Index = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="glow" size="lg" asChild>
-                <a href="mailto:contact@example.com">
+                <a href="mailto:florianaubert34@gmail.com">
                   Me contacter
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="/cv.pdf" download>
+                <a href="/CV-Aubert-Florian.pdf" download>
                   Télécharger mon CV
                 </a>
               </Button>
