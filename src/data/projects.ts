@@ -1,28 +1,35 @@
 export interface Project {
-  id: string;
-  title: string;
-  shortDescription: string;
-  fullDescription: string;
-  context: string;
-  learnings: string[];
-  tags: string[];
-  image?: string;
-  links?: {
-    github?: string;
-    live?: string;
-  };
-  date: string;
-  duration: string;
-  team?: string;
+    id: string;
+    title: string;
+    shortDescription: string;
+    fullDescription: string;
+    context: string;
+    learnings: string[];
+    methods?: string[];
+    contributions?: string[];
+    features?: string[];
+    gallery?: string[];
+    video?: string;
+    tags: string[];
+    image?: string;
+    links?: {
+        github?: string;
+        live?: string;
+    };
+    date: string;
+    duration: string;
+    team?: string;
 }
 
 export const projects: Project[] = [
   {
     id: "sae-web",
-    title: "SAÉ Développement Web",
-    shortDescription: "Application web complète développée dans le cadre d'une SAÉ en équipe.",
-    fullDescription: "Dans le cadre de cette SAÉ, nous avons développé une application web complète permettant la gestion d'un système de réservation. Le projet a impliqué la mise en place d'une architecture MVC, la création d'une base de données relationnelle, et le développement d'une interface utilisateur responsive.",
-    context: "Ce projet a été réalisé dans le cadre du BUT Informatique, en équipe de 4 personnes. L'objectif était de mettre en pratique les compétences acquises en développement web, bases de données et gestion de projet.",
+    title: "Projet Développement Web",
+    shortDescription: "Application web complète développée dans le cadre d'un projet académique en équipe de 4.",
+    fullDescription: "Dans le cadre de ce projet, nous avons développé une application web complète intégrant un système de vote en ligne. " +
+        "Le projet a impliqué la mise en place d'une architecture MVC, la création d'une base de données relationnelle, et le développement d'une interface utilisateur responsive.",
+    context: "Ce projet a été réalisé dans le cadre du BUT Informatique, en équipe de 4 personnes. " +
+        "L'objectif était de mettre en pratique les compétences acquises en développement web, bases de données et gestion de projet.",
     learnings: [
       "Travail en équipe avec Git et méthodologie Agile",
       "Conception et modélisation de bases de données",
@@ -31,45 +38,74 @@ export const projects: Project[] = [
       "Déploiement et mise en production"
     ],
     tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Git"],
-    date: "2024",
-    duration: "2 mois",
-    team: "4 personnes"
+    date: "2025-2026",
+    duration: "4 mois",
+    team: "4 personnes",
+      image: "/img.png",
   },
   {
     id: "code-game-jam",
     title: "Code Game Jam",
-    shortDescription: "Jeu vidéo créé en 48h lors d'une compétition de développement.",
-    fullDescription: "Participation à une Code Game Jam où nous avons créé un jeu vidéo complet en seulement 48 heures. Le thème imposé nous a poussé à faire preuve de créativité tout en respectant des contraintes techniques strictes.",
-    context: "La Code Game Jam est un événement où des équipes de développeurs créent un jeu vidéo en temps limité autour d'un thème révélé au début de la compétition. C'est un défi intense qui teste la créativité et les compétences techniques.",
+    shortDescription: "Jeu vidéo créé en 24h lors d'une compétition de développement.",
+    fullDescription: "Participation à une Code Game Jam où nous avons créé un jeu vidéo complet en seulement 24 heures. " +
+        "Le thème imposé nous a poussé à faire preuve de créativité tout en respectant des contraintes techniques strictes.",
+    context: "La Code Game Jam est un événement où des équipes de développeurs créent un jeu vidéo en temps limité autour d'un thème révélé au début de la compétition. " +
+        "C'est un défi intense qui teste la créativité et les compétences techniques.",
     learnings: [
       "Gestion du temps et priorisation des features",
       "Développement rapide de prototypes",
-      "Utilisation d'un moteur de jeu (Unity/Godot)",
+      "Utilisation d'un moteur de jeu (GameMaker)",
       "Travail sous pression et prise de décisions rapides",
       "Game design et expérience utilisateur"
     ],
-    tags: ["Unity", "C#", "Game Design", "Teamwork"],
-    date: "2024",
-    duration: "48 heures",
-    team: "3 personnes"
+    tags: ["GameMaker", "GML", "Game Design", "Teamwork"],
+    date: "2025",
+    duration: "24 heures",
+    team: "5 personnes",
+      links: {
+        live: "https://oxirus.itch.io/melo-knight",
+      },
   },
   {
     id: "nuit-info",
     title: "Nuit de l'Info",
-    shortDescription: "Défi de programmation nocturne sur une thématique d'actualité.",
-    fullDescription: "La Nuit de l'Info est un défi national de développement qui se déroule sur une nuit entière. Notre équipe a relevé plusieurs défis techniques tout en développant une application web sur le thème de la sensibilisation environnementale.",
-    context: "Événement national réunissant des milliers d'étudiants en informatique. L'objectif est de développer une application web complète en une nuit sur un thème imposé, tout en relevant des défis annexes proposés par les sponsors.",
-    learnings: [
+      shortDescription: "Application web développée en une nuit lors de la Nuit de l’Info, visant à sensibiliser au numérique libre, " +
+          "responsable et durable à travers une approche pédagogique et interactive.",
+      fullDescription: "Ce projet a été réalisé dans le cadre de la Nuit de l’Info, un hackathon national réunissant des étudiants en informatique autour d’un sujet imposé. " +
+          "En une nuit, notre équipe a conçu et développé une application web visant à sensibiliser les utilisateurs aux enjeux de la dépendance aux Big Tech " +
+          "et à promouvoir des alternatives numériques libres, responsables et durables.\n\n" +
+          "L’application prend la forme d’un site web interactif permettant de découvrir la démarche NIRD (Numérique Inclusif, Responsable et Durable), " +
+          "d’expliquer ses principes et de montrer comment un établissement scolaire peut progressivement réduire sa dépendance aux solutions propriétaires. " +
+          "Le projet met l’accent sur la pédagogie, l’accessibilité et l’engagement des utilisateurs, malgré des contraintes fortes de temps.",
+      context: "La Nuit de l’Info est un événement national annuel durant lequel des équipes d’étudiants disposent d’une seule nuit pour " +
+          "développer une application web fonctionnelle autour d’un sujet imposé. L’édition à laquelle nous avons participé portait sur la démarche NIRD " +
+          "(Numérique Inclusif, Responsable et Durable), qui vise à aider les établissements scolaires à réduire leur dépendance aux Big Tech, " +
+          "à lutter contre l’obsolescence programmée et à promouvoir les logiciels libres.\n\nLe projet devait impérativement être mis en ligne à la fin de la nuit, " +
+          "utiliser des ressources libres de droit et être diffusé sous licence libre. Le travail s’est déroulé en équipe, dans un contexte de forte contrainte temporelle, " +
+          "nécessitant une organisation efficace, une priorisation rapide des fonctionnalités et une collaboration intensive.",
+      learnings: [
       "Développement rapide et efficace",
       "Collaboration intensive en équipe",
       "Intégration d'APIs externes",
-      "Présentation et pitch de projet",
       "Gestion du stress et de la fatigue"
     ],
-    tags: ["React", "Node.js", "API", "Hackathon"],
-    date: "2023",
-    duration: "1 nuit",
-    team: "5 personnes"
+    tags: ["HTML/CSS", "Javascript", "Git", "Hackathon"],
+    date: "2025",
+    duration: "16 heures",
+    team: "5 personnes",
+      image: "/ndi.png",
+      links: {
+          github: "https://github.com/guibalf/NuitInfo",
+          live: "https://webinfo.iutmontp.univ-montp2.fr/~guibalf/nuitinfo/",
+      },
+      contributions: ["Participation à la conception de l’architecture du site",
+          "Développement du mémo pour apprendre en jouant",
+          "Collaboration avec l’équipe pour finaliser une version fonctionnelle avant la deadline"],
+      methods: ["Répartition rapide des rôles au sein de l’équipe",
+          "Priorisation des fonctionnalités essentielles",
+          "Développement sous forte contrainte de temps",
+          "Utilisation de Git pour le travail collaboratif",
+          "Communication permanente"],
   },
   {
     id: "projet-perso",

@@ -1,5 +1,15 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { ArrowLeft, Calendar, Clock, Users, Github, ExternalLink, CheckCircle } from "lucide-react";
+import {
+    ArrowLeft,
+    Calendar,
+    Clock,
+    Users,
+    Github,
+    ExternalLink,
+    CheckCircle,
+    UserCheck,
+    FolderGit2, Workflow
+} from "lucide-react";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/projects";
@@ -109,21 +119,68 @@ const ProjectDetail = () => {
                 </p>
               </section>
 
-              {/* Learnings */}
-              <section>
-                <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                  <span className="text-primary font-mono">03.</span>
-                  Apprentissages
-                </h2>
-                <ul className="space-y-3">
-                  {project.learnings.map((learning, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">{learning}</span>
-                    </li>
-                  ))}
-                </ul>
-              </section>
+                {/* Méthodes de travail */}
+                <section>
+                    <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <span className="text-primary font-mono">03.</span>
+                        Méthodes de travail
+                    </h2>
+                    <ul className="space-y-3">
+                        {project.methods.map((method, index) => (
+                            <li key={index} className="flex items-start gap-3">
+                                <Workflow className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                <span className="text-muted-foreground">{method}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                {/* Learnings */}
+                <section>
+                    <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <span className="text-primary font-mono">04.</span>
+                        Apprentissages
+                    </h2>
+                    <ul className="space-y-3">
+                        {project.learnings.map((learning, index) => (
+                            <li key={index} className="flex items-start gap-3">
+                                <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                <span className="text-muted-foreground">{learning}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                {/* Contribution personnelle */}
+                <section>
+                    <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <span className="text-primary font-mono">05.</span>
+                        Contribution personnelle
+                    </h2>
+                    <ul className="space-y-3">
+                        {project.contributions.map((contribution, index) => (
+                            <li key={index} className="flex items-start gap-3">
+                                <UserCheck className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                                <span className="text-muted-foreground">{contribution}</span>
+                            </li>
+                        ))}
+                    </ul>
+                </section>
+
+                {/* Preuves visuelles */}
+                <section>
+                    <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                        <FolderGit2 className="h-5 w-5 text-primary" />
+                        Preuves & médias
+                    </h2>
+                    <div className="text-muted-foreground">
+                        <p className="mb-4">Ajoutez ici des captures d’écran, GIFs ou vidéos présentant le projet.</p>
+                        <div className="grid grid-cols-2 gap-4">
+                            <div className="w-full h-40 bg-secondary rounded-lg" />
+                            <div className="w-full h-40 bg-secondary rounded-lg" />
+                        </div>
+                    </div>
+                </section>
             </div>
 
             {/* Sidebar */}

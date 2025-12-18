@@ -71,7 +71,7 @@ const futureProjects = [
   },
   {
     title: "Poursuite d'études ou emploi",
-    description: "Après le BUT, envisager une école d'ingénieur ou intégrer directement le monde professionnel."
+    description: "Après le BUT, envisager un master pour développer mes compétences."
   }
 ];
 
