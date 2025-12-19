@@ -25,32 +25,64 @@ export const projects: Project[] = [
   {
     id: "sae-web",
     title: "Projet Développement Web",
-    shortDescription: "Application web complète développée dans le cadre d'un projet académique en équipe de 4.",
-    fullDescription: "Dans le cadre de ce projet, nous avons développé une application web complète intégrant un système de vote en ligne. " +
-        "Le projet a impliqué la mise en place d'une architecture MVC, la création d'une base de données relationnelle, et le développement d'une interface utilisateur responsive.",
-    context: "Ce projet a été réalisé dans le cadre du BUT Informatique, en équipe de 4 personnes. " +
-        "L'objectif était de mettre en pratique les compétences acquises en développement web, bases de données et gestion de projet.",
+    shortDescription: "Application web permettant la mise en place d’un système de vote en ligne sécurisé, développée en équipe dans le cadre du BUT Informatique.",
+    fullDescription: "Ce projet consistait à concevoir et développer une application web complète intégrant un système de vote en ligne." +
+        "L’objectif était de permettre à des utilisateurs de participer à des votes de manière sécurisée et structurée," +
+        "avec une gestion des sessions, des résultats et des données associées." +
+        "Le projet couvrait l’ensemble du cycle de développement : analyse du besoin, conception de la base de données," +
+        "développement du front-end et du back-end, ainsi que les phases de tests et de validation." +
+        "Une attention particulière a été portée à l’ergonomie de l’interface, à la cohérence des données" +
+        "et au respect des bonnes pratiques de développement web.",
+    context: "Projet réalisé dans le cadre du BUT Informatique, en équipe de quatre personnes." +
+        "Le projet répondait à une commande académique formulée par un enseignant jouant le rôle de client," +
+        "avec un besoin fonctionnel précis et des attentes à respecter." +
+        "Le développement s’est appuyé sur la méthode Agile Scrum, avec une organisation en sprints," +
+        "un suivi régulier de l’avancement et des ajustements en fonction des retours du client." +
+        "Le projet était contraint par un calendrier imposé et par des exigences techniques," +
+        "notamment en matière de structuration du code, de gestion des données et de collaboration en équipe.",
     learnings: [
-      "Travail en équipe avec Git et méthodologie Agile",
-      "Conception et modélisation de bases de données",
-      "Développement front-end avec HTML, CSS et JavaScript",
-      "Développement back-end avec PHP et MySQL",
-      "Déploiement et mise en production"
+        "Conception d’une application web complète",
+        "Gestion et sécurisation des données en base de données",
+        "Travail en équipe avec Git et gestion de versions",
+        "Respect d’un cahier des charges et de délais imposés",
+        "Meilleure compréhension du fonctionnement client / serveur",
+        "Application de la méthode Agile Scrum"
     ],
     tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Git"],
     date: "2025-2026",
     duration: "4 mois",
     team: "4 personnes",
-      image: "/img.png",
+      image: "/sae-vote.png",
+      contributions: ["Participation à la conception globale de l’architecture de l’application",
+          "Conception et développement de la logique de vote (algorithmes)",
+          "Création des formulaires de création et de modification des votes (front-end et back-end)",
+          "Correction de bugs et amélioration de la stabilité du projet",
+          "Collaboration avec l’équipe pour livrer une application fonctionnelle"
+      ],
+      methods: ["Organisation du projet selon la méthode Agile Scrum",
+          "Découpage du travail en sprints avec définition des objectifs",
+          "Utilisation d’un backlog pour prioriser les fonctionnalités",
+          "Réunions régulières pour suivre l’avancement et ajuster le travail",
+          "Collaboration via Git et GitHub pour le versioning et les revues de code"
+      ],
+      links: {
+        github: "https://gitlabinfo.iutmontp.univ-montp2.fr/sae3a/projets/aubertf-prudhommet-guibalf-brossarde/sae3a-base",
+      },
+      gallery: ["/creationQuestion.png", "/detailQuestion.png", "/resultatQuestion.png"],
   },
   {
     id: "code-game-jam",
     title: "Code Game Jam",
-    shortDescription: "Jeu vidéo créé en 24h lors d'une compétition de développement.",
-    fullDescription: "Participation à une Code Game Jam où nous avons créé un jeu vidéo complet en seulement 24 heures. " +
-        "Le thème imposé nous a poussé à faire preuve de créativité tout en respectant des contraintes techniques strictes.",
-    context: "La Code Game Jam est un événement où des équipes de développeurs créent un jeu vidéo en temps limité autour d'un thème révélé au début de la compétition. " +
-        "C'est un défi intense qui teste la créativité et les compétences techniques.",
+    shortDescription: "Création d'un jeu vidéo en 24h lors d'une compétition de développement.",
+    fullDescription: "Ce projet a été réalisé lors d’une Code Game Jam, un événement de développement intensif durant lequel " +
+        "une équipe doit concevoir un jeu vidéo complet en un temps très limité." +
+        "À partir d’un thème imposé, notre objectif était de produire un jeu fonctionnel intégrant des mécaniques de gameplay cohérentes et une expérience jouable." +
+        "Le projet s’est concentré sur la mise en œuvre rapide des mécaniques de jeu, la gestion des interactions," +
+        "et l’assemblage des différentes composantes du jeu (logique, graphismes et sons), tout en respectant une contrainte de temps forte.",
+    context: "Projet réalisé lors d’une Code Game Jam, en équipe de cinq personnes, sur une durée de 24 heures." +
+        "Le thème du jeu était révélé au début de l’événement, imposant une phase de conception très courte suivie d’un développement intensif." +
+        "Le projet s’est déroulé dans un contexte de forte contrainte temporelle," +
+        "nécessitant des choix techniques rapides, une bonne répartition des rôles et une communication efficace entre les membres de l’équipe.",
     learnings: [
       "Gestion du temps et priorisation des features",
       "Développement rapide de prototypes",
@@ -65,6 +97,21 @@ export const projects: Project[] = [
       links: {
         live: "https://oxirus.itch.io/melo-knight",
       },
+      methods: [
+          "Répartition rapide des rôles au sein de l’équipe",
+          "Définition des mécaniques principales dès le début du projet",
+          "Intégration continue des fonctionnalités dans le projet global",
+          "Communication constante pour ajuster les choix techniques"
+      ],
+      contributions: [
+          "Développement de la logique principale du jeu",
+          "Implémentation des systèmes de jeu côté code",
+          "Optimisation et correction du code pour assurer un gameplay fluide",
+          "Support technique à l’équipe pour l’intégration des éléments graphiques et sonores"
+      ],
+      image: "/jeu-CGJ.png",
+      gallery: ["/meloKnight.png"],
+      video: "/CGJ.mp4",
   },
   {
     id: "nuit-info",
@@ -106,8 +153,12 @@ export const projects: Project[] = [
           "Développement sous forte contrainte de temps",
           "Utilisation de Git pour le travail collaboratif",
           "Communication permanente"],
+      gallery: ["/memo-NDI.png", "/laserGame-NDI.png", "/rpg-NDI.png", "/snake-NDI.png"],
+      /*features?: string[];
+      video?: string;*/
   },
-  {
+
+  /*{
     id: "projet-perso",
     title: "Projet Personnel",
     shortDescription: "Application développée en autonomie pour explorer de nouvelles technologies.",
@@ -124,5 +175,5 @@ export const projects: Project[] = [
     date: "2024",
     duration: "En cours",
     team: "Solo"
-  }
+  }*/
 ];

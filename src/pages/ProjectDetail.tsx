@@ -173,12 +173,21 @@ const ProjectDetail = () => {
                         <FolderGit2 className="h-5 w-5 text-primary" />
                         Preuves & médias
                     </h2>
-                    <div className="text-muted-foreground">
-                        <p className="mb-4">Ajoutez ici des captures d’écran, GIFs ou vidéos présentant le projet.</p>
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="w-full h-40 bg-secondary rounded-lg" />
-                            <div className="w-full h-40 bg-secondary rounded-lg" />
-                        </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-1 gap-4">
+                        {project.gallery.map((media, index) => (
+                            <div key={index} className="w-full h-full md:h-full overflow-hidden rounded-lg border border-border bg-secondary">
+                                <img src={media} alt={`${project.title} - média ${index + 1}`} className="w-full h-full object-cover"/>
+                            </div>
+                        ))}
+                        {project.video && (
+                            <div className="aspect-video overflow-hidden rounded-lg border border-border bg-secondary">
+                                <video controls className="w-full h-full object-cover">
+                                    <source src={project.video} type="video/mp4" />
+                                    Votre navigateur ne supporte pas la vidéo.
+                                </video>
+                            </div>
+                        )}
                     </div>
                 </section>
             </div>
