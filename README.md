@@ -1,73 +1,93 @@
-# Welcome to your Lovable project
+# Portfolio – Florian Aubert
 
-## Project info
+Bienvenue sur mon portfolio.
 
-**URL**: https://lovable.dev/projects/10b123ea-06b5-4377-aca6-5914da2746cc
+Je m’appelle **Florian Aubert**, étudiant en **BUT Informatique** à l’IUT de Montpellier.  
+Ce portfolio présente une sélection de projets réalisés dans le cadre de ma formation et lors d’événements (hackathons, compétitions), ainsi que des projets personnels.
 
-## How can I edit this code?
+L’objectif est de montrer **mes compétences techniques**, **ma manière de travailler**, et **ma contribution réelle** dans chaque projet.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## Profil
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/10b123ea-06b5-4377-aca6-5914da2746cc) and start prompting.
+- BUT Informatique – IUT de Montpellier
+- Intérêt principal : développement logiciel et web
+- Travail en équipe, projets encadrés et événements intensifs
+- Technologies : PHP, JavaScript, React, MySQL, Git, HTML/CSS
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## Projets principaux
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Projet Développement Web – Système de vote en ligne
+**Contexte académique (BUT Informatique)**  
+Application web développée en équipe dans le cadre d’une SAE, avec un **client réel (enseignant)**.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Architecture MVC
+- Base de données relationnelle
+- Gestion complète d’un système de vote (création, participation, résultats)
+- Méthode **Scrum**
+- Travail en équipe (4 personnes)
 
-Follow these steps:
+Contribution personnelle détaillée sur la page du projet.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Nuit de l’Info
+**Hackathon national – 16 heures**
 
-# Step 3: Install the necessary dependencies.
-npm i
+Développement d’une application web sur un thème imposé, avec des défis techniques supplémentaires.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- Travail sous contrainte de temps
+- Collaboration intensive
+- Intégration de fonctionnalités complètes en une nuit
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Code Game Jam
+**Compétition de création de jeu vidéo – 24 heures**
 
-**Use GitHub Codespaces**
+Création d’un jeu vidéo en équipe à partir d’un thème imposé.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Participation au développement du **code du jeu (logique, mécaniques, gameplay)**
+- Travail sous pression
+- Décisions techniques rapides
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Technologies utilisées
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Langages : PHP, JavaScript, TypeScript
+- Front-end : HTML, CSS, React, Tailwind
+- Back-end : PHP, MySQL
+- Outils : Git, GitHub
+- Méthodes : Scrum, travail en équipe, gestion de projet
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/10b123ea-06b5-4377-aca6-5914da2746cc) and click on Share -> Publish.
+## Structure du projet
 
-## Can I connect a custom domain to my Lovable project?
+- `/projects` : liste des projets
+- `/projects/:id` : pages de détail (contexte, méthodes, contribution, preuves)
+- Données projets centralisées dans `data/projects.ts`
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Liens
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- GitHub : https://github.com/florianaubert
+- LinkedIn : https://www.linkedin.com/in/florian-aubert-7771b6347
+
+---
+
+## Remarque
+
+Chaque projet présenté inclut :
+- le **contexte**
+- les **méthodes de travail**
+- ma **contribution personnelle**
+- les **compétences développées**
+- des **preuves visuelles** lorsque disponibles
+
+Ce portfolio évoluera avec de nouveaux projets et compétences.
